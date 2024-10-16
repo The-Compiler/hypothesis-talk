@@ -9,7 +9,7 @@ While it's debatable whether property-based testing should fully replace the man
 The framework, although incredibly powerful, might seem overwhelming at first. In this talk, I will demonstrate how even simply throwing random strings at functions can reveal surprising bugs. From there, we'll progress towards generating more complex data, which will be less daunting than it initially appears. You'll also see how Hypothesis seamlessly integrates with various ecosystems and can be a valuable tool in any developer's toolkit.
 
 <p align="middle">
-  <img src="img/bruhinsw.svg" width="32%" />
+  <img src="img/bruhinsw.svg?" width="32%" />
   <img src="img/hypothesis.svg" width="32%" /> 
   <img src="img/python-summit.svg" width="32%" />
 </p>
