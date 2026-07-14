@@ -1,2 +1,2 @@
 pytest
-hypothesis
+hypothesis[lark]

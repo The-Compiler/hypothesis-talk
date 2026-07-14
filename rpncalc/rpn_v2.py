@@ -2,22 +2,26 @@ from __future__ import annotations
 
 import sys
 
-from rpncalc.utils import calc
+from rpncalc.utils import calc, Config
 
 class RPNCalculator:
     def __init__(self, config):
         self.config = config
         self.stack = []
 
+    def get_inputs(self) -> list[str]:
+        inp = input(self.config.prompt + " ")
+        return inp.split()
+
     def run(self) -> None:
         while True:
-            inp = input("> ")
-            if inp == "q":
-                return
-            elif inp == "p":
-                print(self.stack)
-            else:
-                self.evaluate(inp)
+            for inp in self.get_inputs():
+                if inp == "q":
+                    return
+                elif inp == "p":
+                    print(self.stack)
+                else:
+                    self.evaluate(inp)
 
     def err(self, msg: str) -> None:
         print(msg, file=sys.stderr)
@@ -52,5 +56,7 @@ class RPNCalculator:
 
 
 if __name__ == "__main__":
-    rpn = RPNCalculator()
+    config = Config()
+    config.load_cwd()
+    rpn = RPNCalculator(config)
     rpn.run()
