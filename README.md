@@ -1,6 +1,6 @@
 # Property based testing with Hypothesis
 
-The [website](https://hypothesis.works) of the Hypothesis project boldly asserts:
+The [website](https://hypothesis.works) of the Hypothesis project used to boldly assert:
 
 > *Normal “automated” software testing is surprisingly manual. Every scenario the computer runs, someone had to write by hand. Hypothesis can fix this.*
 
@@ -11,5 +11,4 @@ The framework, although incredibly powerful, might seem overwhelming at first. I
 <p align="middle">
   <img src="img/bruhinsw-logo.svg" width="32%" />
   <img src="img/hypothesis.svg" width="32%" /> 
-  <img src="img/python-summit.svg" width="32%" />
 </p>
